@@ -7,16 +7,16 @@ class App extends Component {
 
   handleClick = () => {
     this.setState({
-      count: this.state.count - 1
+      count: this.state.count - 2
     })
   }
 
   render() {
     const { count } = this.state
-    
+
     return (
       <div>
-        <h1 onClick={this.handleClick}>1Welcome to My App {count}</h1>
+        <h1 onClick={this.handleClick}>Welcome to My App {count}</h1>
       </div>
     )
   }
